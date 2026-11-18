@@ -21,15 +21,7 @@ robots.txt, sitemap.xml
 .nojekyll                tells GitHub Pages to serve files as-is
 ```
 
-## Common updates
 
-- **New resume:** replace `assets/Moman_Khan_Resume.pdf` and keep the same file name, so the download link keeps working.
-- **New publication:** add an `<li>` to the `pubs` list in `index.html`, newest first.
-- **New job or teaching role:** copy an existing `<li>` in the Experience or Teaching section and edit it.
-- **New photo:** replace `assets/img/moman-khan.jpg` and `moman-khan.webp`. A square image of at least 400 × 400 px looks best.
-- After editing, update the "Last updated" line in the footer and `lastmod` in `sitemap.xml`.
-
-To preview locally, run `python3 -m http.server` in this folder and open <http://localhost:8000>.
 
 ## Credits
 
