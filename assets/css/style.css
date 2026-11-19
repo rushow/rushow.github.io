@@ -193,7 +193,7 @@ a { color: var(--accent-text); text-underline-offset: .18em; }
 .journey { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; position: relative; }
 .journey::before {
   content: ""; position: absolute; top: 1.4rem; left: 1.4rem; right: calc((100% - 4.5rem) / 4 - 1.4rem); height: 0;
-  border-top: 2px dashed #B8C2FA;
+  border-top: 2px dashed #C5CAD3;
 }
 .stop { position: relative; }
 .stop-pin {
@@ -277,7 +277,7 @@ a { color: var(--accent-text); text-underline-offset: .18em; }
   background-image: linear-gradient(rgba(10,10,14,.55), rgba(10,10,14,.7)), url("https://images.pexels.com/photos/13890646/pexels-photo-13890646.jpeg?auto=compress&cs=tinysrgb&w=1800");
   background-size: cover; background-position: center 60%;
 }
-.photo-credit { position: absolute; right: var(--gutter); bottom: .9rem; margin: 0; font-size: .78rem; color: rgba(255,255,255,.75); }
+.band .photo-credit, .quote-band .photo-credit { position: absolute; max-width: none; font-family: var(--body); font-weight: 400; line-height: 1.4; right: var(--gutter); bottom: .9rem; margin: 0; font-size: .78rem; color: rgba(255,255,255,.75); }
 .photo-credit a { color: inherit; }
 .quote-mark { font-size: 2rem; color: var(--gold); margin-bottom: 1rem; }
 .quote-band blockquote { margin: 0; }
@@ -400,7 +400,7 @@ a.contact-item:hover { border-color: var(--accent); transform: translateY(-2px);
   .lb-prev { grid-row: 2; justify-self: end; margin-bottom: 1.5rem; }
   .lb-next { grid-row: 2; justify-self: start; margin-bottom: 1.5rem; }
   .journey { grid-template-columns: 1fr; row-gap: 2rem; padding-left: 3.75rem; }
-  .journey::before { display: block; top: .5rem; bottom: .5rem; left: 1.35rem; right: auto; width: 0; height: auto; border-top: 0; border-left: 2px dashed #B8C2FA; }
+  .journey::before { display: block; top: .5rem; bottom: .5rem; left: 1.35rem; right: auto; width: 0; height: auto; border-top: 0; border-left: 2px dashed #C5CAD3; }
   .stop-pin { position: absolute; left: -3.75rem; top: 0; margin: 0; }
   .hero-roles span { padding: 0 .65rem; }
 }
