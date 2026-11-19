@@ -45,6 +45,24 @@
     });
   }
 
+  // Photos rise into place, a few at a time, as the grid scrolls into view.
+  var tiles = document.querySelectorAll('.photo-grid li');
+  if ('IntersectionObserver' in window) {
+    var reveal = new IntersectionObserver(function (entries) {
+      var batch = 0;
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.setProperty('--i', batch++);
+          entry.target.classList.add('is-in');
+          reveal.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    tiles.forEach(function (li) { reveal.observe(li); });
+  } else {
+    tiles.forEach(function (li) { li.classList.add('is-in'); });
+  }
+
   // Photo viewer. Without JavaScript, each photo simply links to its Pexels page.
   var box = document.getElementById('lightbox');
   var photos = Array.prototype.slice.call(document.querySelectorAll('.photo-grid .ph'));
@@ -58,6 +76,8 @@
       current = (i + photos.length) % photos.length;
       var a = photos[current];
       var thumb = a.querySelector('img');
+      img.classList.add('is-loading');
+      img.onload = function () { img.classList.remove('is-loading'); };
       img.src = a.getAttribute('data-full');
       img.alt = thumb.alt;
       var place = a.querySelector('.ph-place');
