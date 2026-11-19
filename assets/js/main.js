@@ -1,14 +1,21 @@
-// Header background on scroll, mobile menu, active nav link, footer year.
+// Header background and progress bar on scroll, mobile menu, active nav link,
+// photo viewer, footer year.
 (function () {
   var header = document.getElementById('site-header');
   var toggle = header.querySelector('.menu-toggle');
   var links = header.querySelectorAll('.site-nav a');
+  var progress = document.getElementById('scroll-progress');
 
   function onScroll() {
     header.classList.toggle('is-solid', window.scrollY > 40);
+    if (progress) {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.transform = 'scaleX(' + (max > 0 ? Math.min(window.scrollY / max, 1) : 0) + ')';
+    }
   }
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
 
   function closeMenu() {
     header.classList.remove('menu-open');
@@ -36,6 +43,43 @@
       var el = document.getElementById(id);
       if (el) observer.observe(el);
     });
+  }
+
+  // Photo viewer. Without JavaScript, each photo simply links to its Pexels page.
+  var box = document.getElementById('lightbox');
+  var photos = Array.prototype.slice.call(document.querySelectorAll('.photo-grid .ph'));
+  if (box && photos.length && typeof box.showModal === 'function') {
+    var img = box.querySelector('img');
+    var text = box.querySelector('.lb-text');
+    var link = box.querySelector('.lb-link');
+    var current = 0;
+
+    function show(i) {
+      current = (i + photos.length) % photos.length;
+      var a = photos[current];
+      var thumb = a.querySelector('img');
+      img.src = a.getAttribute('data-full');
+      img.alt = thumb.alt;
+      var place = a.querySelector('.ph-place');
+      text.textContent = a.querySelector('.ph-title').textContent + (place ? ', ' + place.textContent : '');
+      link.href = a.href;
+    }
+    photos.forEach(function (a, i) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        show(i);
+        box.showModal();
+      });
+    });
+    box.querySelector('.lb-close').addEventListener('click', function () { box.close(); });
+    box.querySelector('.lb-prev').addEventListener('click', function () { show(current - 1); });
+    box.querySelector('.lb-next').addEventListener('click', function () { show(current + 1); });
+    box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+    box.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') show(current - 1);
+      if (e.key === 'ArrowRight') show(current + 1);
+    });
+    box.addEventListener('close', function () { img.removeAttribute('src'); photos[current].focus(); });
   }
 
   var year = document.getElementById('year');

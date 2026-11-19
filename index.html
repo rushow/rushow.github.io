@@ -42,13 +42,15 @@
       {"@type": "CollegeOrUniversity", "name": "University of Trento"},
       {"@type": "CollegeOrUniversity", "name": "American International University-Bangladesh"}
     ],
+    "knowsLanguage": ["Bengali", "English", "Italian", "Hindi"],
     "knowsAbout": ["Concept drift", "Fraud detection", "Machine learning", "Data stream mining", "Deep learning", "Full-stack web development", "Software project management", "Cloud computing"],
     "sameAs": [
       "https://www.linkedin.com/in/momanhaquekhan/",
       "https://github.com/rushow",
       "https://scholar.google.com/citations?user=J439ZF8AAAAJ",
       "https://orcid.org/0000-0002-9435-7793",
-      "https://www.researchgate.net/profile/Md-Moman-Ul-Haque-Khan"
+      "https://www.researchgate.net/profile/Md-Moman-Ul-Haque-Khan",
+      "https://www.pexels.com/@rushow/"
     ]
   }
   </script>
@@ -83,6 +85,7 @@
 <symbol id="i-brain" viewBox="0 0 512 512"><path d="M120 56c0-30.9 25.1-56 56-56l24 0c17.7 0 32 14.3 32 32l0 448c0 17.7-14.3 32-32 32l-32 0c-29.8 0-54.9-20.4-62-48-.7 0-1.3 0-2 0-44.2 0-80-35.8-80-80 0-18 6-34.6 16-48-19.4-14.6-32-37.8-32-64 0-30.9 17.6-57.8 43.2-71.1-7.1-12-11.2-26-11.2-40.9 0-44.2 35.8-80 80-80l0-24zm272 0l0 24c44.2 0 80 35.8 80 80 0 15-4.1 29-11.2 40.9 25.7 13.3 43.2 40.1 43.2 71.1 0 26.2-12.6 49.4-32 64 10 13.4 16 30 16 48 0 44.2-35.8 80-80 80-.7 0-1.3 0-2 0-7.1 27.6-32.2 48-62 48l-32 0c-17.7 0-32-14.3-32-32l0-448c0-17.7 14.3-32 32-32l24 0c30.9 0 56 25.1 56 56z"/></symbol>
 <symbol id="i-paper" viewBox="0 0 384 512"><path d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM120 256c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0z"/></symbol>
 <symbol id="i-plane" viewBox="0 0 576 512"><path d="M520 200c30.9 0 56 25.1 56 56s-25.1 56-56 56l-127.3 0-159.2 173.6c-6.1 6.6-14.6 10.4-23.6 10.4l-43.7 0c-10.9 0-18.6-10.7-15.2-21.1l54.3-162.9-99.7 0-52.8 66c-3 3.8-7.6 6-12.5 6l-19.8 0c-10.4 0-18-9.8-15.5-19.9L32 256 5 147.9C2.4 137.8 10.1 128 20.5 128l19.8 0c4.9 0 9.5 2.2 12.5 6l52.8 66 99.7 0-54.3-162.9C147.6 26.7 155.3 16 166.2 16l43.7 0c9 0 17.5 3.8 23.6 10.4L392.7 200 520 200z"/></symbol>
+<symbol id="i-camera" viewBox="0 0 512 512"><path d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0-10.4-31.2C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></symbol>
 <symbol id="i-cloud" viewBox="0 0 576 512"><path d="M0 336c0 79.5 64.5 144 144 144l304 0c70.7 0 128-57.3 128-128 0-51.6-30.5-96.1-74.5-116.3 6.7-13.1 10.5-28 10.5-43.7 0-53-43-96-96-96-17.7 0-34.2 4.8-48.4 13.1-24.1-45.8-72.2-77.1-127.6-77.1-79.5 0-144 64.5-144 144 0 8 .7 15.9 1.9 23.5-56.9 19.2-97.9 73.1-97.9 136.5z"/></symbol>
 </svg>
   <a class="skip" href="#main">Skip to content</a>
@@ -97,16 +100,25 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Main">
         <ul>
-          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#journey">Journey</a></li>
           <li><a href="#research">Research</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#photography">Photography</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="header-actions">
+        <a class="hbtn hbtn-primary" href="assets/Moman_Khan_Resume.pdf" download>
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span>Resume</span>
+        </a>
+        <a class="hbtn" href="mailto:moman.uregina@gmail.com">
+          <svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg><span>Email</span>
+        </a>
+      </div>
     </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
   </header>
 
   <main id="main">
@@ -130,6 +142,7 @@
           <li><a href="https://scholar.google.com/citations?user=J439ZF8AAAAJ" rel="me" aria-label="Google Scholar"><svg class="icon"><use href="#i-scholar"/></svg></a></li>
           <li><a href="https://orcid.org/0000-0002-9435-7793" rel="me" aria-label="ORCID"><svg class="icon"><use href="#i-orcid"/></svg></a></li>
           <li><a href="https://www.researchgate.net/profile/Md-Moman-Ul-Haque-Khan" rel="me" aria-label="ResearchGate"><svg class="icon"><use href="#i-researchgate"/></svg></a></li>
+          <li><a href="https://www.pexels.com/@rushow/" rel="me" aria-label="Photography on Pexels"><svg class="icon"><use href="#i-camera"/></svg></a></li>
           <li><a href="mailto:moman.uregina@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-envelope"/></svg></a></li>
         </ul>
       </div>
@@ -427,12 +440,13 @@
         <div class="skills">
           <h3 class="col-title"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg> Skills</h3>
           <div class="skill-groups">
-            <div><h4>Languages</h4><ul class="chips"><li>JavaScript</li><li>PHP</li><li>Python</li><li>Java</li><li>SQL</li></ul></div>
+            <div><h4>Programming languages</h4><ul class="chips"><li>JavaScript</li><li>PHP</li><li>Python</li><li>Java</li><li>SQL</li></ul></div>
             <div><h4>Web</h4><ul class="chips"><li>Vue.js</li><li>Node.js</li><li>Laravel</li><li>Yii</li><li>Flask</li><li>REST APIs</li><li>HTML/CSS</li></ul></div>
             <div><h4>Data</h4><ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Database design</li></ul></div>
             <div><h4>Machine learning</h4><ul class="chips"><li>PyTorch</li><li>NumPy</li><li>ResNet</li><li>Concept drift detection</li><li>Fraud detection</li></ul></div>
             <div><h4>Cloud and tools</h4><ul class="chips"><li>Microsoft Azure</li><li>DigitalOcean</li><li>Docker</li><li>Linux</li><li>Git</li></ul></div>
             <div><h4>Delivery</h4><ul class="chips"><li>Agile/Scrum</li><li>Sprint planning</li><li>Code review</li><li>UAT</li><li>Release management</li></ul></div>
+            <div><h4>Spoken languages</h4><ul class="chips"><li>Bengali</li><li>English</li><li>Italian</li><li>Hindi</li></ul></div>
           </div>
         </div>
 
@@ -521,6 +535,86 @@
       </div>
     </section>
 
+    <!-- Photography -->
+    <section class="section alt" id="photography" aria-labelledby="photography-h">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Beyond work</p>
+          <h2 id="photography-h">Photography</h2>
+          <p class="section-lede">When I’m away from the keyboard, I’m usually behind a camera. Most of these were taken around Trentino during my years in Italy. My photos on Pexels have been viewed more than 3.5 million times.</p>
+        </div>
+        <ul class="photo-grid">
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/val-di-funes-13686304/" data-full="https://images.pexels.com/photos/13686304/pexels-photo-13686304.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/13686304/pexels-photo-13686304.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/13686304/pexels-photo-13686304.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/13686304/pexels-photo-13686304.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/13686304/pexels-photo-13686304.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="400" loading="lazy" decoding="async" alt="Val di Funes, South Tyrol, Italy. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Val di Funes</span><span class="ph-place">South Tyrol, Italy</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/castelo-del-buonconsiglio-12526767/" data-full="https://images.pexels.com/photos/12526767/pexels-photo-12526767.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/12526767/pexels-photo-12526767.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/12526767/pexels-photo-12526767.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/12526767/pexels-photo-12526767.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/12526767/pexels-photo-12526767.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="903" loading="lazy" decoding="async" alt="Castello del Buonconsiglio, Trento, Italy. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Castello del Buonconsiglio</span><span class="ph-place">Trento, Italy</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/castle-by-lake-of-toblino-13890646/" data-full="https://images.pexels.com/photos/13890646/pexels-photo-13890646.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/13890646/pexels-photo-13890646.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/13890646/pexels-photo-13890646.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/13890646/pexels-photo-13890646.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/13890646/pexels-photo-13890646.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="400" loading="lazy" decoding="async" alt="Toblino Castle, Trentino, Italy. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Toblino Castle</span><span class="ph-place">Trentino, Italy</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/story-of-sun-and-cloud-13976845/" data-full="https://images.pexels.com/photos/13976845/pexels-photo-13976845.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/13976845/pexels-photo-13976845.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/13976845/pexels-photo-13976845.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/13976845/pexels-photo-13976845.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/13976845/pexels-photo-13976845.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="903" loading="lazy" decoding="async" alt="Story of sun and cloud. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Story of sun and cloud</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/window-view-of-a-city-and-mountains-13686370/" data-full="https://images.pexels.com/photos/13686370/pexels-photo-13686370.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/13686370/pexels-photo-13686370.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/13686370/pexels-photo-13686370.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/13686370/pexels-photo-13686370.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/13686370/pexels-photo-13686370.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="400" loading="lazy" decoding="async" alt="Trento through a window, Trento, Italy. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Trento through a window</span><span class="ph-place">Trento, Italy</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/deep-forest-on-hill-over-building-13726599/" data-full="https://images.pexels.com/photos/13726599/pexels-photo-13726599.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/13726599/pexels-photo-13726599.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/13726599/pexels-photo-13726599.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/13726599/pexels-photo-13726599.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/13726599/pexels-photo-13726599.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="903" loading="lazy" decoding="async" alt="Cabin in the forest, Near Trento, Italy. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Cabin in the forest</span><span class="ph-place">Near Trento, Italy</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/ride-to-molveno-13308695/" data-full="https://images.pexels.com/photos/13308695/pexels-photo-13308695.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/13308695/pexels-photo-13308695.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/13308695/pexels-photo-13308695.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/13308695/pexels-photo-13308695.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/13308695/pexels-photo-13308695.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="400" loading="lazy" decoding="async" alt="Ride to Molveno, Trentino, Italy. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Ride to Molveno</span><span class="ph-place">Trentino, Italy</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/lets-grow-old-togather-12261216/" data-full="https://images.pexels.com/photos/12261216/pexels-photo-12261216.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/12261216/pexels-photo-12261216.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/12261216/pexels-photo-12261216.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/12261216/pexels-photo-12261216.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/12261216/pexels-photo-12261216.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="903" loading="lazy" decoding="async" alt="Let’s grow old together. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Let’s grow old together</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/nature-italy-church-beauty-in-nature-13930731/" data-full="https://images.pexels.com/photos/13930731/pexels-photo-13930731.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/13930731/pexels-photo-13930731.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/13930731/pexels-photo-13930731.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/13930731/pexels-photo-13930731.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/13930731/pexels-photo-13930731.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="903" loading="lazy" decoding="async" alt="Church in the hills, Italy. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Church in the hills</span><span class="ph-place">Italy</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/blossoms-in-tranquility-12072223/" data-full="https://images.pexels.com/photos/12072223/pexels-photo-12072223.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/12072223/pexels-photo-12072223.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/12072223/pexels-photo-12072223.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/12072223/pexels-photo-12072223.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/12072223/pexels-photo-12072223.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="400" loading="lazy" decoding="async" alt="Blossoms in tranquility. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">Blossoms in tranquility</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="ph" href="https://www.pexels.com/photo/33383309/" data-full="https://images.pexels.com/photos/33383309/pexels-photo-33383309.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+              <img src="https://images.pexels.com/photos/33383309/pexels-photo-33383309.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600" srcset="https://images.pexels.com/photos/33383309/pexels-photo-33383309.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400 400w, https://images.pexels.com/photos/33383309/pexels-photo-33383309.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/33383309/pexels-photo-33383309.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 900w" sizes="(max-width: 47rem) 50vw, (max-width: 60rem) 50vw, 33vw" width="600" height="800" loading="lazy" decoding="async" alt="To the line. Photo by Md Moman Ul Haque Khan">
+              <span class="ph-cap"><span class="ph-title">To the line</span></span>
+            </a>
+          </li>
+        </ul>
+        <p class="photo-more"><a class="btn btn-primary" href="https://www.pexels.com/@rushow/">See all my photos on Pexels <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></p>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section class="section dark" id="contact" aria-labelledby="contact-h">
       <div class="container">
@@ -547,6 +641,16 @@
     </section>
   </main>
 
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="lb-btn lb-close" type="button" aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous photo"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></button>
+    <figure>
+      <img alt="">
+      <figcaption><span class="lb-text"></span> <a class="lb-link" href="#">View on Pexels <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" type="button" aria-label="Next photo"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></button>
+  </dialog>
+
   <footer class="site-footer">
     <div class="container footer-row">
       <p>© <span id="year">2026</span> Md Moman Ul Haque Khan</p>
@@ -556,6 +660,7 @@
         <li><a href="https://scholar.google.com/citations?user=J439ZF8AAAAJ" aria-label="Google Scholar"><svg class="icon"><use href="#i-scholar"/></svg></a></li>
         <li><a href="https://orcid.org/0000-0002-9435-7793" aria-label="ORCID"><svg class="icon"><use href="#i-orcid"/></svg></a></li>
         <li><a href="https://www.researchgate.net/profile/Md-Moman-Ul-Haque-Khan" aria-label="ResearchGate"><svg class="icon"><use href="#i-researchgate"/></svg></a></li>
+        <li><a href="https://www.pexels.com/@rushow/" aria-label="Photography on Pexels"><svg class="icon"><use href="#i-camera"/></svg></a></li>
       </ul>
       <a class="to-top" href="#home" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a>
     </div>

@@ -28,4 +28,5 @@ robots.txt, sitemap.xml
 - Headings: [Poppins](https://fonts.google.com/specimen/Poppins) (SIL Open Font License), subset to Latin.
 - Body text: [Lato](https://www.latofonts.com/) by Łukasz Dziedzic (SIL Open Font License), subset to Latin.
 - Icons: [Font Awesome Free](https://fontawesome.com/license/free) (CC BY 4.0), inlined as an SVG sprite.
+- Photography section: photos by Md Moman Ul Haque Khan, served from his [Pexels profile](https://www.pexels.com/@rushow/).
 - Background photos: from the original site's template, sourced from [Unsplash](https://unsplash.com/).
