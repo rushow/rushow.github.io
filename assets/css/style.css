@@ -269,6 +269,8 @@ a { color: var(--accent-text); text-underline-offset: .18em; }
 /* Projects */
 .project h3 { font-size: 1.2rem; }
 .project p { color: var(--muted); }
+.project-group { margin-top: clamp(2.75rem, 5vw, 3.5rem); }
+.project .project-meta { font-family: var(--head); font-weight: 500; font-size: .78rem; letter-spacing: .02em; color: var(--gold-text); margin: 0 0 .45rem; }
 
 /* Quote */
 .quote-band {
